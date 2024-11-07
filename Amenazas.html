@@ -1,0 +1,246 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad - Amenazas Comunes para Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #87CEEB;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #333333;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .threat-section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .text-column {
+            width: 60%;
+            padding-right: 20px;
+            margin-bottom: 20px; 
+            text-align: justify; 
+        }
+
+        .image-column {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            color: #0056b3; 
+            border-bottom: 2px solid #0056b3; 
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #003d7a;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .separator {
+            height: 4px;
+            background-color: #007bff; 
+            margin: 20px 0;
+            border-radius: 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ciberseguridad</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Prevenciones.html">Prevenciones</a></li>
+                <li><a href="Amenazas.html">Tipos de Amenazas</a></li>
+                <li><a href="Recursos_Denuncias.html">Recursos y Denuncias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Amenazas Comunes para los Usuarios</h2>
+
+        <section class="threat-section" id="ingenieria-social">
+            <div class="text-column">
+                <h3>Ingeniería Social</h3>
+                <p>La ingeniería social manipula a las personas para que revelen información confidencial o realicen acciones inseguras. Esta técnica utiliza la confianza para explotar las vulnerabilidades humanas, a menudo mediante llamadas o mensajes falsos.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_1.webp" alt="Ejemplo de ingeniería social">
+            </div>
+        </section>
+
+        <section class="threat-section" id="phishing">
+            <div class="text-column">
+                <h3>Phishing</h3>
+                <p>El phishing engaña a los usuarios para que compartan datos confidenciales, como contraseñas, mediante correos electrónicos o mensajes que parecen ser de fuentes confiables.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_2.jpg" alt="Ejemplo de phishing">
+            </div>
+        </section>
+
+        <section class="threat-section" id="drive-by-downloads">
+            <div class="text-column">
+                <h3>Drive-By Downloads</h3>
+                <p>Estas descargas ocurren cuando se visita un sitio web comprometido que instala software malicioso sin el conocimiento o consentimiento del usuario.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_3.png" alt="Ejemplo de drive-by download">
+            </div>
+        </section>
+
+        <section class="threat-section" id="rootkit">
+            <div class="text-column">
+                <h3>Rootkit</h3>
+                <p>Los rootkits son herramientas que permiten a un atacante mantener el control de un sistema sin ser detectado, ocultando su presencia en el sistema comprometido.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_4.webp" alt="Ejemplo de rootkit">
+            </div>
+        </section>
+
+        <section class="threat-section" id="puertas-traseras">
+            <div class="text-column">
+                <h3>Puertas Traseras</h3>
+                <p>Las puertas traseras permiten el acceso no autorizado a un sistema, dejando un “camino oculto” para que los atacantes accedan a la información en cualquier momento.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_5.png" alt="Ejemplo de puerta trasera">
+            </div>
+        </section>
+
+        <section class="threat-section" id="botnet">
+            <div class="text-column">
+                <h3>Botnet</h3>
+                <p>Las botnets son redes de dispositivos infectados que los atacantes controlan remotamente para realizar ataques coordinados, como enviar spam o realizar ataques DDoS.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_6.jpg" alt="Ejemplo de botnet">
+            </div>
+        </section>
+
+        <section class="threat-section" id="keylogger">
+            <div class="text-column">
+                <h3>Keylogger</h3>
+                <p>Un keylogger registra las pulsaciones del teclado del usuario, permitiendo a los atacantes obtener información sensible, como contraseñas o datos bancarios.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_7.jpg" alt="Ejemplo de keylogger">
+            </div>
+        </section>
+
+        <section class="threat-section" id="ransomware">
+            <div class="text-column">
+                <h3>Ransomware</h3>
+                <p>El ransomware encripta los archivos de un usuario y exige un rescate para desbloquearlos. Esta amenaza ha afectado tanto a individuos como a organizaciones.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_8.jpg" alt="Ejemplo de ransomware">
+            </div>
+        </section>
+
+        <section class="threat-section" id="adware">
+            <div class="text-column">
+                <h3>Adware</h3>
+                <p>El adware muestra anuncios no deseados en el dispositivo del usuario, a menudo recopilando información sobre sus hábitos de navegación para mostrar anuncios personalizados.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_9.webp" alt="Ejemplo de adware">
+            </div>
+        </section>
+
+        <section class="threat-section" id="spyware">
+            <div class="text-column">
+                <h3>Spyware</h3>
+                <p>El spyware monitorea y recopila información sobre las actividades del usuario sin su conocimiento, a menudo con fines de espionaje o robo de datos personales.</p>
+            </div>
+            <div class="image-column">
+                <img src="Imagenes/amenazas_10.jpg" alt="Ejemplo de spyware">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Leslie Lucero Franco Calleros - Matrícula: 223053</p>
+    </footer>
+</body>
