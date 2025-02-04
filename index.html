@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado AES con Flask</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b1dbff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Titulo */
+        h1 {
+            color: #05284b;
+            margin-top: 50px;
+            font-size: 2rem;
+        }
+
+        /* Formulario */
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /*Campos de entrada */
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin-top: 10px;
+            border: 1px solid #80c0cf;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        /*Botones */
+        button {
+            background-color: #73abd0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /*Resultado */
+        h3 {
+            color: #2b4764;
+            font-size: 1.2em;
+        }
+
+        .results {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cifrado AES con Flask</h1>
+    <form method="POST">
+        <label for="mensaje">Escribe tu mensaje:</label>
+        <input type="text" name="mensaje" required>
+        <button type="submit">Cifrar</button>
+    </form>
+
+    {% if mensaje %}
+    <div class="results">
+        <h3><strong>Mensaje original:</strong> {{ mensaje }}</h3>
+        <h3><strong>Texto cifrado:</strong> {{ ciphertext }}</h3>
+        <h3><strong>Texto descifrado:</strong> {{ decrypted_message }}</h3>
+    </div>
+    {% endif %}
+</body>
+</html>
